@@ -17,6 +17,7 @@ public class ExampleController {
         return exampleService.getExample(id);
     }
 
+    @GetMapping
     public Flux<ExampleRecord> getAllExample(){
         return exampleService.getAllExample();
     }
